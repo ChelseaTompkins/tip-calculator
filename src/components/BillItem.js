@@ -23,6 +23,9 @@ class BillItem extends Component {
                             onChange={(event)=>this.props.updateTip(event.target.value)}
                             placeholder={this.props.tip}/>
                     </div>
+                    <div>
+                        <p>Tax: {this.props.tax}</p>
+                    </div>
                     <button className="btn btn-info" type="submit">Caculate total</button>
                 </form>
                 <h5 className="total">Your total: ${this.props.total}</h5>
