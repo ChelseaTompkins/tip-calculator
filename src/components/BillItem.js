@@ -24,7 +24,7 @@ class BillItem extends Component {
                             placeholder={this.props.tip}/>
                     </div>
                     <div>
-                        <p>Tax: {this.props.tax}</p>
+                        <p>Tax: {this.props.tax / 0.01}%</p>
                     </div>
                     <button className="btn btn-info" type="submit">Caculate total</button>
                 </form>
