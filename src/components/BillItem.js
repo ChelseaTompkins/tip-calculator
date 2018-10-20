@@ -28,7 +28,7 @@ class BillItem extends Component {
                     </div>
                     <button className="btn btn-info" type="submit">Caculate total</button>
                 </form>
-                <h5 className="total">Your total: ${this.props.total}</h5>
+                <h5 className="total">Your total: ${this.props.total.toFixed(2)}</h5>
             </div>
         )
     }
