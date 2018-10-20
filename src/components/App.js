@@ -17,7 +17,7 @@ class App extends Component {
     let bill = parseFloat(this.state.bill);
     let tip = parseFloat(this.state.tip);
     let tax = parseFloat(this.state.tax); 
-    let calcTip = bill * tip;
+    let calcTip = bill * (tip * 0.01);
     let calcTax = bill * tax;
     let total = bill + calcTip + calcTax;
 
