@@ -20,8 +20,7 @@ class BillItem extends Component {
                             className="form-control"
                             type="number" 
                             value={this.props.tip} 
-                            onChange={(event)=>this.props.updateTip(event.target.value)}
-                            placeholder={this.props.tip}/>
+                            onChange={(event)=>this.props.updateTip(event.target.value)}/>
                     </div>
                     <div>
                         <p>Tax: {this.props.tax / 0.01}%</p>

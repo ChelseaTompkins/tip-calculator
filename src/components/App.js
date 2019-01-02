@@ -22,7 +22,7 @@ class App extends Component {
     let total = bill + calcTip + calcTax;
 
     this.setState({
-      tip: calcTip,
+      // tip: calcTip,
       total: total
     })
   }
@@ -42,7 +42,12 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h2 className="heading">Bill calculator</h2>
+        <div className="jumbotron jumbotron-fluid">
+          <div className="container">
+            <h1 className="display-4 text-info">Calculate Your Bill</h1>
+            <p className="lead">Bill calculator at your service!</p>
+          </div>
+        </div>
         <BillItem 
           bill={this.state.bill} 
           tax={this.state.tax}
